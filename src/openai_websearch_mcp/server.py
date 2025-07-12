@@ -6,6 +6,7 @@ from pydantic_extra_types.timezone_name import TimeZoneName
 from pydantic import BaseModel
 
 mcp = FastMCP(
+    port= 8888,
     name="OpenAI Web Search",
     instructions="This MCP server provides access to OpenAI's websearch functionality through the Model Context Protocol."
 )
